@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #0e0e0e;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation oben rechts */
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 30px;
+            background-color: #121212;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        .content-wrapper {
+            margin-top: 70px; /* Abstand wegen fixed nav */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo-preise-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .preise {
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .preise h2 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .paket {
+            background-color: #1e1e1e;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+            text-align: left;
+        }
+
+        .paket-title {
+            color: #00ffff;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .logo-right img {
+            max-width: 150px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+        }
+
+        .discord-link {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .discord-link a {
+            color: #7289da;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .discord-link a:hover {
+            text-decoration: underline;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        .image-row img {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-row img:hover {
+            transform: scale(1.05);
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo-preise-container {
+                flex-direction: column;
+            }
+
+            .preise {
+                text-align: center;
+            }
+
+            .logo-right img {
+                max-width: 120px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">RCO Shop</a>
+    </nav>
+
+    <div class="content-wrapper">
+
+        <div class="logo-preise-container">
+
+            <div class="preise">
+                <h2>Preisliste</h2>
+
+                <div class="paket">
+                    <div class="paket-title">🟥 R - PAKET</div>
+                    <p>══════════════</p>
+                    <p>✅ 100% Custom<br>
+                        ✅ Fullplate Weste / Normal Weste<br>
+                        ✅ Bandana / Volle Maske (Gratis dazu!)<br>
+                        ➥ <strong>5€</strong></p>
+                </div>
+
+                <div class="paket">
+                    <div class="paket-title">🟨 S - PAKET</div>
+                    <p>══════════════</p>
+                    <p>✅ 100% Custom<br>
+                        ✅ Bandana / Volle Maske<br>
+                        ✅ Fullplate Weste / Normal Weste<br>
+                        ✅ Custom Torso nach Wahl! (Gratis dazu!)<br>
+                        ➥ <strong>9,99€</strong></p>
+                </div>
+
+                <div class="paket">
+                    <div class="paket-title">🟩 L - PAKET</div>
+                    <p>══════════════</p>
+                    <p>✅ 100% Custom<br>
+                        ✅ Bandana + Volle Maske<br>
+                        ✅ Fullplate Weste / Normal Weste<br>
+                        ✅ Custom Torso nach Wahl!<br>
+                        ✅ Custom Hose nach Wahl!<br>
+                        ✅ Custom Mantel / Polo Shirt (Gratis dazu!)<br>
+                        ➥ <strong>19,99€</strong></p>
+                </div>
+            </div>
+
+            <div class="logo-right">
+                <img src="https://media.discordapp.net/attachments/1350773775221657771/1395459457844117504/RCO_ANIMIERT.gif?ex=687a8665&is=687934e5&hm=a3cba52ed29e2ae1e0e75eccb15be9e6b381779b93664158d4d473cced90048a&=" alt="R Logo" />
+            </div>
+
+        </div>
+
+        <div class="discord-link">
+            <p>Unser Discord:</p>
+            <a href="https://discord.gg/PQQ2zjy5cG" target="_blank">https://discord.gg/PQQ2zjy5cG</a>
+        </div>
+
+        <div class="image-row">
+            <img src="https://media.discordapp.net/attachments/1395104374333636861/1395347274367762564/image.png?ex=687a1dea&is=6878cc6a&hm=3bdb00a3335b08c932b5169269772c71da3e6067f36b2f6fae1a685f7e962d2e&=&format=webp&quality=lossless" alt="Bild 1" />
+            <img src="https://media.discordapp.net/attachments/1395104291584213142/1395343228789723228/image.png?ex=687a1a25&is=6878c8a5&hm=a5cdda7865734d8c0893f78da164ed3b5557a73b661ef5970013b7f753f0393f&=&format=webp&quality=lossless" alt="Bild 2" />
+            <img src="https://media.discordapp.net/attachments/1395104027972337757/1395339782388842546/image.png?ex=687a16f0&is=6878c570&hm=69fefd73192465292a75f9775e2e7bdf8c4e1405ab6e8ed7e07e6cb0e7f04813&=&format=webp&quality=lossless" alt="Bild 3" />
+        </div>
+
+    </div>
+
+</body>
+</html>
