@@ -1,0 +1,121 @@
+Klar! Ich habe die neuen Bilder unten drunter unter die ersten Bilder in einem neuen Bereich hinzugefügt. So bleibt es übersichtlich und schön getrennt.
+
+Hier der komplette aktualisierte Code mit beiden Bilderreihen:
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title>POVS</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #0e0e0e;
+            color: #3399ff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background-color: #121212;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #3399ff;
+            user-select: none;
+        }
+        .content {
+            margin-top: 90px; /* Abstand wegen fixed header */
+            width: 90%;
+            max-width: 900px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #3399ff;
+        }
+        .btn-home {
+            margin: 30px auto;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            background-color: #3399ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(51, 153, 255, 0.7);
+            transition: background-color 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-home:hover {
+            background-color: #00ffff;
+            color: #121212;
+        }
+        .images-container {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+        .images-container img {
+            max-width: 280px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(51, 153, 255, 0.8);
+            transition: transform 0.3s ease;
+        }
+        .images-container img:hover {
+            transform: scale(1.05);
+        }
+        .images-container.second-row {
+            margin-top: 60px;
+        }
+        @media (max-width: 600px) {
+            .images-container img {
+                max-width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>POVS</header>
+
+    <div class="content">
+        <p>Willkommen auf der POVS-Seite!</p>
+        <a href="index.html" class="btn-home">Zurück zur Startseite</a>
+
+        <div class="images-container">
+            <img src="https://media.discordapp.net/attachments/1395104572703506574/1395351990116290673/image.png?ex=687a224e&is=6878d0ce&hm=8200a5efd5b5eec3d7ebfabac4c9bcfac8b63a33c3104bc5cab98006b9888545&=&format=webp&quality=lossless" alt="Bild 1" />
+            <img src="https://media.discordapp.net/attachments/1395327203486601286/1395327237829427260/Screenshot_2025-07-16_144128.png?ex=687a0b41&is=6878b9c1&hm=66b9a59b445b93a9be035622caf464121cf3d98410d1724753d99ee2821c2c10&=&format=webp&quality=lossless" alt="Bild 2" />
+            <img src="https://media.discordapp.net/attachments/1395104374333636861/1395347274367762564/image.png?ex=687a1dea&is=6878cc6a&hm=3bdb00a3335b08c932b5169269772c71da3e6067f36b2f6fae1a685f7e962d2e&=&format=webp&quality=lossless" alt="Bild 3" />
+        </div>
+
+        <div class="images-container second-row">
+            <img src="https://media.discordapp.net/attachments/1395104213528481914/1395336526057177168/Screenshot_2025-06-06_213835.png?ex=687a13e7&is=6878c267&hm=021df2b44cbe01dcf76d4ab7a3bfa2b474f2157b08dfbbc3c079371108ccbfba&=&format=webp&quality=lossless" alt="Bild 4" />
+            <img src="https://media.discordapp.net/attachments/1395104213528481914/1395327105729826848/Screenshot_2025-07-12_171728.png?ex=687ab3e1&is=68796261&hm=d0486d0febf418e1c30b16bdff11edb4654a253557756dc12355887b8ba8aa53&=&format=webp&quality=lossless" alt="Bild 5" />
+            <img src="https://media.discordapp.net/attachments/1395327385087250483/1395404657597092001/image.png?ex=687a535b&is=687901db&hm=d89916f7b3281dd429a4b4124929003eff98591c20c60083b4802f4c2cb5d5a3&=&format=webp&quality=lossless" alt="Bild 6" />
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+Rco Shop By Ricco 2023
+
